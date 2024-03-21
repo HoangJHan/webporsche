@@ -93,6 +93,7 @@ header {
 .others {
   flex: -1;
   font-weight: bold;
+  align-items: center;
   color: rgb(195, 199, 198);
   display: flex;
 }
