@@ -244,7 +244,53 @@ button:hover {
   justify-content: auto;
   transform: translateY(-30%);
 }
-
+/* history*/
+/* Phần đầu history*/
+.history-head {
+  display: flex;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  transform: translateY(-25%);
+}
+.image-history-head img {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  margin-left: 80px;
+}
+.content-history-head {
+  margin-left: 250px;
+  width: 400px;
+  height: 400px;
+}
+.title-content-history-head {
+  color: #fff;
+  font-size: 50px;
+}
+/* Phần cuối history*/
+.history-last {
+  display: flex;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  transform: translateY(-25%);
+}
+.image-history-last img {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  margin-left: 240px;
+}
+.content-history-last {
+  margin-left: 90px;
+  width: 400px;
+  height: 400px;
+}
+.title-content-history-last {
+  color: #fff;
+  font-size: 50px;
+}
 /* wrapper và cuonmenu dùng để gói lại menu*/
 .warapper {
   position: relative;
