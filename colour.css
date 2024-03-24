@@ -245,52 +245,77 @@ button:hover {
   transform: translateY(-30%);
 }
 /* history*/
+.history {
+  padding: none;
+}
 /* Phần đầu history*/
 .history-head {
   display: flex;
-  padding: 40px 50px;
-  box-sizing: border-box;
+  padding: none;
+  border: none;
+  justify-content: center;
+}
+.image-history-head {
+  margin-right: 50px;
   transform: translateY(-25%);
 }
 .image-history-head img {
   width: 400px;
   height: 400px;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  margin-left: 80px;
+  padding: none;
+  border: 1px solid #fff;
+  border-radius: 25px;
 }
 .content-history-head {
-  margin-left: 250px;
+  color: #fff;
   width: 400px;
   height: 400px;
+  margin-left: 150px;
+  transform: translateY(-25%);
 }
 .title-content-history-head {
-  color: #fff;
-  font-size: 50px;
+  font-size: 40px;
 }
-/* Phần cuối history*/
+/*history-last*/
 .history-last {
   display: flex;
-  padding: 40px 50px;
-  box-sizing: border-box;
+  padding: none;
+  border: none;
+  margin-top: 100px;
+  justify-content: center;
+}
+.image-history-last {
+  margin-right: 50px;
   transform: translateY(-25%);
 }
 .image-history-last img {
   width: 400px;
   height: 400px;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  margin-left: 240px;
+  padding: none;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  transform: translateX(15%);
 }
 .content-history-last {
-  margin-left: 90px;
+  color: #fff;
   width: 400px;
   height: 400px;
+  margin-right: 140px;
+  transform: translateY(-25%);
 }
 .title-content-history-last {
-  color: #fff;
-  font-size: 50px;
+  font-size: 40px;
 }
+/*Phần cuối */
+.duongline {
+  margin-left: 150px;
+  width: 77.5%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 /* wrapper và cuonmenu dùng để gói lại menu*/
 .warapper {
   position: relative;
