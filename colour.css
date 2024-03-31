@@ -318,7 +318,27 @@ footer {
   display: flex;
   justify-content: center;
 }
-
+.footer-left {
+  margin-right: 500px;
+}
+/* Phần menu cho phần footer */
+.cst-footer-rights {
+  display: flex;
+}
+.cst-footer-rights > li {
+  font-size: 35px;
+  padding: 10px;
+}
+.footer-last {
+  width: none;
+  height: 180px;
+  background-color: rgb(61, 61, 61);
+}
+.nd-footer-last {
+  color: #fff;
+  padding-left: 120px;
+  transform: translateY(90%);
+}
 /* wrapper và cuonmenu dùng để gói lại menu*/
 .warapper {
   position: relative;
@@ -329,4 +349,5 @@ footer {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: rgb(31, 35, 36);
 }
