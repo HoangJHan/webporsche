@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  background-color: rgb(31, 35, 36);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -500px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  color: rgb(195, 199, 198); /* điều chỉnh màu chữ của thẻ a */
+  text-decoration: none; /* tắt gạch chân dưới chữ của thẻ a*/
+  text-emphasis: none; /* loại bỏ hiệu ứng nhấn mạnh như : * trước chữ */
+}
+/* Phần header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  height: 50px;
+  align-items: center;
+  box-sizing: border-box;
+
+  /* sử lý cuộn trang */
+  /* xử lý cuộn trang cách 1:  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;  Đảm bảo menu hiển thị trên các phần tử khác  
+  cách 2: 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;  chỉnh màu nền tùy theo thiết kế của bạn 
+  z-index: 1000; đảm bảo menu hiển thị trên các phần tử khác */
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+.logo {
+  flex: 1;
+  align-items: center;
+  padding: 0px 0px;
+  display: flex;
+}
+.menu {
+  flex: 7;
+  font-weight: bolder;
+  color: rgb(195, 199, 198);
+  display: flex;
+}
+.menu > li:hover .submenu {
+  display: block;
+}
+.submenu {
+  position: absolute;
+  width: 150px;
+  padding: 10px 0 10px 20px;
+  border: 1px solid #ccc;
+  display: none;
+  background-color: rgb(31, 35, 36);
+}
+.submenu > li:hover .submenu-con {
+  display: block;
+}
+.submenu-con {
+  position: absolute;
+  width: 350px;
+  border: 1px solid #ccc;
+  padding: 10px 0 10px 20px;
+  margin: -15px 0px 0 115px;
+  display: none;
+  background-color: rgb(31, 35, 36);
+  background-position: right 200px;
+}
+.menu > li {
+  font-size: 17px;
+  padding: 25px 12px;
+  border-width: 0px;
+  border-style: none;
+  border-color: black;
+}
+.others {
+  flex: -1;
+  font-weight: bold;
+  align-items: center;
+  color: rgb(195, 199, 198);
+  display: flex;
+}
+.others > li {
+  padding: 0 5px;
+}
+
+.dangnhap {
+  display: inline-block;
+  background-color: #2684ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: sans-serif;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dangnhap:hover {
+  background-color: #1e69d8;
+}
+.icon-text {
+  display: flex;
+}
+.slideshow img {
+  width: 565px;
+  height: 562px;
+}
+.slideshow {
+  margin-left: auto;
+}
+.body-one {
+  display: flex;
+}
+
+.slides img {
+  width: auto;
+  max-width: 100%;
+  height: 562px;
+}
+/* wrapper và cuonmenu dùng để gói lại menu*/
+.warapper {
+  position: relative;
+}
+
+.cuonmenu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(31, 35, 36);
+}
