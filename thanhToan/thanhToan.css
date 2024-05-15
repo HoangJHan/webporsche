@@ -223,34 +223,47 @@ button {
 button:hover {
   background-color: #ad1b10e4;
 }
-
 /* Danh mục sản phẩm */
 .phong-danh-muc {
   max-width: 100%;
-  height: 500px;
+  height: 1000px;
   background-color: #ffffff;
-  margin-top: 100px;
   font-size: 24px; /* Kích thước chữ có thể thay đổi tùy ý */
   color: rgb(0, 0, 0); /* Màu chữ */
   text-align: center; /* Canh giữa nội dung */
+  line-height: 300px; /* Để nội dung được căn giữa theo chiều dọc */
 }
-
-.format-car img {
-  width: 330px;
-  height: 330px;
-  border-radius: 20px;
-  padding: 10px;
+.format img {
+  max-width: 320px;
+  height: 280px;
+  margin: 0 55px 0 55px;
+  border-radius: 15px;
+  transform: translateY(-180px);
 }
-.format-car a p {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  transform: translateY(-50px);
-  text-align: center;
-}
-.format-car {
+.format h4 {
+  transform: translateY(-420px);
+  margin-left: 150px;
   display: flex;
-  margin: -100px 0px 60px 260px;
+}
+.format {
+  display: flex;
+  justify-content: center;
+}
+.message-content {
+  display: none; /* Ẩn nội dung ban đầu */
+  width: 320px;
+  height: 283px;
+  position: absolute;
+  background-color: #763d3d; /* Màu nền */
+  padding: 10px;
+  border: 1px solid #ccc;
+  transform: translateY(-181px);
+  margin-left: -95px;
+  border-radius: 15px;
+}
+.message-icon:hover + .message-content,
+.message-content:hover {
+  display: block; /* Hiển thị nội dung khi di chuột vào icon hoặc nội dung */
 }
 /* history*/
 .history {
@@ -284,7 +297,6 @@ button:hover {
 .title-content-history-head {
   font-size: 40px;
 }
-/*------------ Cac dong xe------------ */
 
 /*history-last*/
 .history-last {
@@ -320,6 +332,8 @@ button:hover {
 .duongline {
   margin-left: 150px;
   width: 77.5%;
+  margin-top: 150px;
+  margin-bottom: 0px;
 }
 footer {
   display: flex;
@@ -373,3 +387,60 @@ footer {
     font-size: 24px;
   }
 }
+/* Nội dung */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.product-items {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 12px;
+}
+.product-item {
+  width: 35%;
+  background-color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+.product-item img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* Loại bỏ quy tắc CSS liên quan đến hiển thị .product-info */
+.product-info {
+  display: none;
+  position: absolute;
+  width: 350px;
+  height: 302px;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 9px;
+  margin-top: -410px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.product-item p:hover + .product-info {
+  display: block;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: -30px; /* Tạo khoảng cách giữa các nút */
+  margin-top: 10px;
+}
+.add-to-cart {
+  flex: 1.5;
+  margin-left: 20px;
+}
+.button-chon {
+  flex: 1.2;
+}
+/*
+.product-item-text {
+  display: flex;
+  justify-content: space-between;
+}
+*/
