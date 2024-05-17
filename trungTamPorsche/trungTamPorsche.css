@@ -265,6 +265,24 @@ button:hover {
 .message-content:hover {
   display: block; /* Hiển thị nội dung khi di chuột vào icon hoặc nội dung */
 }
+.center-posrche {
+  align-items: center;
+}
+.center-posrche-1 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: 8vh;
+}
+.center-posrche-1 img {
+  width: 650px;
+  height: 300px;
+}
+.center-posrche-1-con p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
 /* history*/
 .history {
   padding: none;
@@ -339,7 +357,7 @@ footer {
   justify-content: center;
 }
 .footer-left {
-  margin-right: 500px;
+  margin-right: 650px;
 }
 /* Phần menu cho phần footer */
 .cst-footer-rights {

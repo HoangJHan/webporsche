@@ -297,7 +297,57 @@ button:hover {
 .title-content-history-head {
   font-size: 40px;
 }
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.pay {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  background-color: rgb(232, 242, 255);
+  text-align: center;
+  display: inline-block;
+}
+.pay h5 {
+  font-size: small;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px 50px 20px 50px;
+}
+.pay h5 label {
+  padding: 0 10px 0 10px;
+  display: flex;
+}
+.pay h5 input {
+  width: 100%;
+  border-radius: 5px;
+}
+.pay h5 p {
+  width: none;
+  display: flex;
+  padding: 10px;
+}
+.pay h5 p input {
+  width: 10%;
+  display: flex;
+}
+.note-main {
+  display: flex;
+}
+.note-0 {
+  flex: 1.5;
+}
+.note {
+  flex: 1.5;
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+  margin-right: 50px;
+  background-color: #ffffff;
+}
 /*history-last*/
 .history-last {
   display: flex;
@@ -340,7 +390,7 @@ footer {
   justify-content: center;
 }
 .footer-left {
-  margin-right: 500px;
+  margin-right: 650px;
 }
 /* Phần menu cho phần footer */
 .cst-footer-rights {
